@@ -1,0 +1,22 @@
+<script>
+let numeros = [];
+let quantidadePares = 0;
+let quantidadeImpares = 0;
+
+for (let i = 0; i < 10; i++) {
+  numeros[i] = parseInt(prompt("Digite o " + (i + 1) + "º número inteiro:"));
+}
+
+for (let i = 0; i < 10; i++) {
+  if (numeros[i] % 2 === 0) {
+    quantidadePares++;
+  } else {
+    quantidadeImpares++;
+  }
+}
+
+alert(
+  "Quantidade de números pares: " + quantidadePares +
+  ". Quantidade de números ímpares: " + quantidadeImpares
+);
+</script>
