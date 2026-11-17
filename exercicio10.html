@@ -1,0 +1,29 @@
+<script>
+let notas = [];
+let soma = 0;
+let aprovados = 0;
+let reprovados = 0;
+let resultado = "Notas armazenadas: ";
+
+for (let i = 0; i < 10; i++) {
+  notas[i] = Number(prompt("Digite a nota do " + (i + 1) + "º aluno:"));
+  soma += notas[i];
+
+  if (notas[i] >= 6) {
+    aprovados++;
+  } else {
+    reprovados++;
+  }
+}
+
+for (let i = 0; i < 10; i++) {
+  resultado += notas[i] + " ";
+}
+
+let media = soma / 10;
+resultado += ". Média geral: " + media;
+resultado += ". Alunos aprovados: " + aprovados;
+resultado += ". Alunos reprovados: " + reprovados;
+
+alert(resultado);
+</script>
