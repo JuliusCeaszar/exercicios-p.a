@@ -1,0 +1,14 @@
+<script>
+let numeros = [];
+let resultado = "Números na ordem inversa: ";
+
+for (let i = 0; i < 10; i++) {
+  numeros[i] = parseInt(prompt("Digite o " + (i + 1) + "º número inteiro:"));
+}
+
+for (let i = 9; i >= 0; i--) {
+  resultado += numeros[i] + " ";
+}
+
+alert(resultado);
+</script>
