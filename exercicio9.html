@@ -1,0 +1,21 @@
+<script>
+let vetorA = [];
+let vetorB = [];
+let vetorC = [];
+let resultado = "Vetor A, Vetor B, Vetor C: ";
+
+for (let i = 0; i < 5; i++) {
+  vetorA[i] = Number(prompt("Digite o " + (i + 1) + "º número do vetor A:"));
+}
+
+for (let i = 0; i < 5; i++) {
+  vetorB[i] = Number(prompt("Digite o " + (i + 1) + "º número do vetor B:"));
+}
+
+for (let i = 0; i < 5; i++) {
+  vetorC[i] = vetorA[i] + vetorB[i];
+  resultado += vetorA[i] + ", " + vetorB[i] + ", " + vetorC[i] + "; ";
+}
+
+alert(resultado);
+</script>
